@@ -9,15 +9,6 @@
     <title>resume website</title>
 </head>
 <body>
-<!--    <nav  class="navbar navbar-expand-lg navbar-light bg-dark">-->
-<!--        <img class="cat" src="img/cat-placeholder.jpeg" alt="cute cat">-->
-<!--        <a class="nav-link text-white h5">About</a>-->
-<!--        <a class="nav-link text-white h5">Education</a>-->
-<!--        <a class="nav-link text-white h5">Skills</a>-->
-<!--        <a class="nav-link text-white h5">Projects</a>-->
-<!--        <a class="nav-link text-white h5">Contact</a>-->
-<!--    </nav>-->
-
 <!--NAVBAR AND PICTURE---------------------------------------------->
 <header class="header-container">
     <div class="banner-logo">
@@ -28,15 +19,15 @@
     </div>
     <nav>
         <ul>
-            <li>About</li>
-            <li>Education</li>
-            <li>Projects</li>
-            <li>Skills</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="html/projects.html">Projects</a></li>
+            <li><a href="#skill">Skills</a></li>
         </ul>
     </nav>
 </header>
 <!--BODY (ABOUT INFORMATION)------------------------------------------------->
-
+<a name="about">
 <div class="main-obj">
     <h1 class="main-name">KYNDALL <span class="lName">SIMS</span></h1>
     <h2>PERSONAL OBJECTIVE</h2>
@@ -49,9 +40,10 @@
 
 <!--EDUCATION INFORMATION, BREAK POINT, will probably change it too experience--------------------------------->
 <div class="education">
+    <a name="edu"></a>
     <h3 class="place">CodeUp Bootcamp</h3>
     <p class="timespent">June 2019 - December 2019</p><br>
-    <ul>
+    <ul class="text">
         <li>Developed front-end web applications using HTML/CSS and JavaScript</li>
         <li>Knowledge of JavaScript frameworks to create rich interactive content</li>
         <li>Experience with Sublime Text and IntelliJ for development</li>
@@ -60,6 +52,7 @@
 <hr>
 <!--Skills------------------------------------------------------------------>
 <div class="skills">
+    <a name="skill"></a>
     <h3 class="skill">Skills</h3><br>
     <p class="flow">Programming <span class="lName">Languages</span> & <span class="lName">Tools</span></p>
     <img class="img" src="img/html-logo.png" alt="html-logo"><br>
@@ -68,9 +61,9 @@
     <img class="img" src="img/jquery-logo.png" alt="jq-logo"><br>
     <img class="img" src="img/bootstrap.png" alt="bs-logo"><br>
     <p class="flow">Workflow</p>
-    <p class="check">&#10004; Mobile-First, Responsive Design</p>
-    <p class="check">&#10004; Cross browser Testing & Debugging</p>
-    <p class="check">&#10004; Agile Development</p>
+    <p class="check">&#10004; Mobile-First, Responsive <span class="lName">Design</span></p>
+    <p class="check">&#10004; Cross browser Testing & <span class="lName">Debugging</span></p>
+    <p class="check">&#10004; Agile <span class="lName">Development</span></p>
 
 </div>
 <hr>

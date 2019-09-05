@@ -34,18 +34,16 @@ body{
 
 
 .banner-logo {
+    background-color: whitesmoke;
     height: 105px;
-    background: white;
     margin-bottom: 50px;
     grid-area: logo;
 }
 
 
 .banner-logo img {
-    /*height: 210px;*/
-    /*position: relative;*/
     bottom: 52.5px;
-    display: block;
+    display: none;
     margin: auto;
     width: 100px;
         height: 120px;
@@ -78,11 +76,17 @@ nav ul {
 nav li {
     margin: 0 15px;
     font-size: 1.25em;
+    /*opacity: 0.7;*/
+}
+
+
+a{
+    color: black;
     opacity: 0.7;
 }
 
-nav li:hover{
-    opacity: 1;
+a:hover{
+    color: black;
 }
 
 /*TEXT AND H1/2/3/4/5/6---------------*/
@@ -107,6 +111,11 @@ h3{
 p, li{
     font-family: 'Lato', sans-serif;
     text-decoration: none;
+}
+
+.text{
+    margin-bottom: 110px;
+    margin-top: 150px;
 }
 
 /*BODY CENTERING AND DISPLAY-----------------------*/
@@ -198,6 +207,7 @@ footer{
     .banner-logo {
         height: 0px;
         margin-bottom: 0;
+        background: white;
         /*grid-area: logo;*/
     }
 
@@ -241,14 +251,14 @@ footer{
         /*font-family: 'Abel', sans-serif;*/
         /*text-align: center;*/
     }
-
+/*SMALL SKILL DESIGN---------------------------------------------*/
     .img{
         filter: none;
     }
 
 }
 
-/*MEDIUM------------------------------------------------*/
+/*MEDIUM-------------------------------------------------------------------------------------*/
 
 @media screen and (min-width:768px) {
 
@@ -266,6 +276,7 @@ footer{
     .banner-logo {
         background-color: white;
         height: 50px;
+        background: white;
     }
 
     .banner-logo img {
@@ -314,7 +325,7 @@ footer{
 }
 
 
-/*LORGE-------------------------------------------------*/
+/*LORGE----------------------------------------------------------------------------------------*/
 @media screen and (min-width: 992px) {
 
     header:nth-of-type(1) ~ * {
@@ -322,10 +333,14 @@ footer{
         margin: 0 auto;
     }
 
+    .banner-logo{
+        background: white;
+    }
+
     .img{
         filter: grayscale(100%);
     }
-
+/*LORGE SKILL DESIGN------------------------------------------*/
     .img:hover{
         filter: grayscale(0);
     }
