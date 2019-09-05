@@ -18,7 +18,7 @@
 
 /*---------------------------------------redo-------------------------------------*/
 body{
-    background-color: lightgray;
+    background-color: whitesmoke;
 }
 
 .header-container {
@@ -86,7 +86,7 @@ nav li:hover{
 }
 
 /*TEXT AND H1/2/3/4/5/6---------------*/
-h1, h4, h3{
+h1, h4, h3, h2{
     font-family: 'Bitter', serif;
 }
 
@@ -94,6 +94,14 @@ h1 {
     margin-bottom: 100px;
     font-size: 80px;
     font-weight: bold;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3{
+    margin-top: 20px;
 }
 
 p, li{
@@ -105,6 +113,7 @@ p, li{
 .main-obj{
     /*display: flex;*/
     text-align: center;
+    /*font-size: 50px;*/
 }
 
 .lName{
@@ -113,6 +122,11 @@ p, li{
 
 .education{
     text-align: center;
+    /*font-size: 50px;*/
+}
+
+.place{
+    font-size: 50px;
 }
 
 .timespent{
@@ -127,14 +141,6 @@ p, li{
     text-align: center;
 }
 
-.email{
-    color: royalblue;
-}
-
-.num{
-    color: royalblue;
-}
-
 .obj{
     margin-bottom: 50px;
 }
@@ -147,39 +153,36 @@ p, li{
 
 .skill{
     text-align: center;
+    font-size: 50px;
 }
 
 
-.html{
+.img {
     width: 100px;
     height: 100px;
-    margin-bottom: 20px;
+    /*margin-bottom: 30px;*/
+    margin-top: 30px;
 }
 
-.css{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+.img:hover{
+    filter: none;
 }
 
-.js{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+.flow{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.jquery{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+.check{
+    margin-bottom: 0;
 }
 
-.bootstrap{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+/*FOOTER DISPLAY--------------------------------------------------------------------*/
+footer{
+    text-align: center;
+    margin-top: 30px;
 }
-
 
 /*SMALL SCREEN--------------------------------------------------------------------------*/
 @media screen and (min-width:576px) {
@@ -239,11 +242,15 @@ p, li{
         /*text-align: center;*/
     }
 
+    .img{
+        filter: none;
+    }
+
 }
 
 /*MEDIUM------------------------------------------------*/
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
 
     .header-container {
         /*display: grid;*/
@@ -256,7 +263,7 @@ p, li{
         height: 50px;
     }
 
-    .banner-logo{
+    .banner-logo {
         background-color: white;
         height: 50px;
     }
@@ -287,6 +294,7 @@ p, li{
         /*    background: white;*/
         height: 50px;
     }
+
     nav li:nth-of-type(2) {
         margin: 0 15px;
     }
@@ -296,6 +304,13 @@ p, li{
     }
 
 
+    .img{
+        filter: grayscale(100%);
+    }
+
+    .img:hover{
+        filter: grayscale(0);
+    }
 }
 
 
@@ -305,5 +320,13 @@ p, li{
     header:nth-of-type(1) ~ * {
         max-width: 810px;
         margin: 0 auto;
+    }
+
+    .img{
+        filter: grayscale(100%);
+    }
+
+    .img:hover{
+        filter: grayscale(0);
     }
 }
